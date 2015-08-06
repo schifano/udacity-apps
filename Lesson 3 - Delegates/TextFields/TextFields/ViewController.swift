@@ -16,13 +16,13 @@ class ViewController: UIViewController, UITextFieldDelegate {
     @IBOutlet weak var characterCountLabel: UILabel!
     
     // Declare delegate objects
-    let emojiTextFieldDelegate = EmojiTextFieldDelegate()
+    let emojiDelegate = EmojiTextFieldDelegate()
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Assign delegate objects to the text fields
-        self.emojiTextField.delegate = emojiTextFieldDelegate
+        self.emojiTextField.delegate = emojiDelegate
         self.counterTextField.delegate = self
     }
 
