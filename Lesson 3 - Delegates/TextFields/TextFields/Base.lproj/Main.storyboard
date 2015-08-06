@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14E46" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="ufC-wZ-h7g">
+            <objects>
+                <viewController id="vXZ-lx-hvc" customClass="ViewController" customModule="TextFields" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
+                        <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="BKc-nI-ba8" userLabel="Emoji Text Field">
+                                <rect key="frame" x="16" y="40" width="382" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="WXg-Y9-WxJ"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="n82-cz-9Ib" userLabel="Random Color Text Field">
+                                <rect key="frame" x="16" y="90" width="382" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="ySy-gA-J8X"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="FFL-3G-8tv" userLabel="Counter Text Field">
+                                <rect key="frame" x="16" y="140" width="382" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="JTy-NE-g96"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kdF-cf-IZX">
+                                <rect key="frame" x="177" y="220" width="60" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="Tfp-KE-dr2"/>
+                                    <constraint firstAttribute="width" constant="60" id="cVR-V8-eS1"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="50"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.43005606375242417" green="0.55318003579189901" blue="0.65050219862084635" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="BKc-nI-ba8" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="20" id="59x-Fv-bQ2"/>
+                            <constraint firstItem="n82-cz-9Ib" firstAttribute="trailing" secondItem="kh9-bI-dsS" secondAttribute="trailingMargin" id="O2M-BU-dut"/>
+                            <constraint firstItem="FFL-3G-8tv" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" id="OJ8-xW-yoE"/>
+                            <constraint firstItem="BKc-nI-ba8" firstAttribute="trailing" secondItem="kh9-bI-dsS" secondAttribute="trailingMargin" id="Zqu-Yv-G8o"/>
+                            <constraint firstAttribute="centerX" secondItem="kdF-cf-IZX" secondAttribute="centerX" id="aoX-1D-aU4"/>
+                            <constraint firstItem="n82-cz-9Ib" firstAttribute="top" secondItem="BKc-nI-ba8" secondAttribute="bottom" constant="20" id="eLU-Xu-r5s"/>
+                            <constraint firstItem="FFL-3G-8tv" firstAttribute="trailing" secondItem="kh9-bI-dsS" secondAttribute="trailingMargin" id="haZ-w9-HlT"/>
+                            <constraint firstItem="n82-cz-9Ib" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" id="nkn-bK-Xw3"/>
+                            <constraint firstItem="BKc-nI-ba8" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" id="uHU-rh-8Bf"/>
+                            <constraint firstItem="FFL-3G-8tv" firstAttribute="top" secondItem="n82-cz-9Ib" secondAttribute="bottom" constant="20" id="wC2-OL-Gmj"/>
+                            <constraint firstItem="kdF-cf-IZX" firstAttribute="top" secondItem="FFL-3G-8tv" secondAttribute="bottom" constant="50" id="yEa-6G-Wsf"/>
+                        </constraints>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
+                    <connections>
+                        <outlet property="characterCountLabel" destination="kdF-cf-IZX" id="Sxa-3m-jNB"/>
+                        <outlet property="colorTextField" destination="n82-cz-9Ib" id="4V1-T4-kck"/>
+                        <outlet property="counterTextField" destination="FFL-3G-8tv" id="ejd-qd-J5Z"/>
+                        <outlet property="emojiTextField" destination="BKc-nI-ba8" id="Q3M-j5-TE6"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="212" y="448"/>
+        </scene>
+    </scenes>
+</document>
