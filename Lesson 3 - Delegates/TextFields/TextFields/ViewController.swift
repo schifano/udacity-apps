@@ -17,12 +17,14 @@ class ViewController: UIViewController, UITextFieldDelegate {
     
     // Declare delegate objects
     let emojiDelegate = EmojiTextFieldDelegate()
+    let randomColorDelegate = RandomColorDelegate()
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Assign delegate objects to the text fields
         self.emojiTextField.delegate = emojiDelegate
+        self.colorTextField.delegate = randomColorDelegate
         self.counterTextField.delegate = self
     }
 
