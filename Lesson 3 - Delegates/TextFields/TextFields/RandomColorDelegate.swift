@@ -17,7 +17,7 @@ class RandomColorDelegate: NSObject, UITextFieldDelegate {
         var newText: NSString = textField.text
         newText = newText.stringByReplacingCharactersInRange(range, withString: string)
         
-        textField.textColor = randomColor()
+        textField.textColor = self.randomColor()
         
         return true
     }
@@ -33,6 +33,9 @@ class RandomColorDelegate: NSObject, UITextFieldDelegate {
         // Approach 2: Generate random colors
 //        let color = UIColor(red: 0.5, green: 0.2, blue: 0.9, alpha: 1)
         // Choose random colors
+        
+        // I thought I had to wrap UInt32 around the Int???
+        // let randomIndex = Int(arc4random() % UInt32(colors.count)) difference???
         var hue: CGFloat = CGFloat(arc4random() % 256) / 256.0
         var saturation: CGFloat = CGFloat(arc4random() % 256) / 256.0 + 0.5
         var brightness: CGFloat = CGFloat(arc4random() % 256) / 256.0 + 0.5
