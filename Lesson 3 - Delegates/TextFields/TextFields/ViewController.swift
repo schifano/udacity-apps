@@ -48,4 +48,9 @@ class ViewController: UIViewController, UITextFieldDelegate {
         // Give textfield permission to update
         return true
     }
+    
+    func textFieldShouldReturn(textField: UITextField) -> Bool {
+        textField.resignFirstResponder()
+        return true
+    }
 }
