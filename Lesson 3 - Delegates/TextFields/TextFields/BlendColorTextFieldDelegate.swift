@@ -1,5 +1,5 @@
 //
-//  BlendColorDelegate.swift
+//  BlendColorTextFieldDelegate.swift
 //  TextFields
 //
 //  Created by Rachel Schifano on 8/8/15.
@@ -9,7 +9,7 @@
 import UIKit
 import Foundation
 
-class BlendColorDelegate: NSObject, UITextFieldDelegate {
+class BlendColorTextFieldDelegate: NSObject, UITextFieldDelegate {
     
     // Create a dictionary of color words
     let colors: [String: UIColor] = [

@@ -7,8 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		2938CAB01B7705BD002F20D4 /* BlendColorDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2938CAAF1B7705BD002F20D4 /* BlendColorDelegate.swift */; };
-		294C1AC11B7545D0008BB6B4 /* RandomColorDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 294C1AC01B7545D0008BB6B4 /* RandomColorDelegate.swift */; };
+		2938CAB01B7705BD002F20D4 /* BlendColorTextFieldDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2938CAAF1B7705BD002F20D4 /* BlendColorTextFieldDelegate.swift */; };
+		294C1AC11B7545D0008BB6B4 /* RandomColorTextFieldDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 294C1AC01B7545D0008BB6B4 /* RandomColorTextFieldDelegate.swift */; };
 		294DA8F01B73E28B00A9E2F9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 294DA8EF1B73E28B00A9E2F9 /* AppDelegate.swift */; };
 		294DA8F21B73E28B00A9E2F9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 294DA8F11B73E28B00A9E2F9 /* ViewController.swift */; };
 		294DA8F51B73E28B00A9E2F9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 294DA8F31B73E28B00A9E2F9 /* Main.storyboard */; };
@@ -29,8 +29,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		2938CAAF1B7705BD002F20D4 /* BlendColorDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BlendColorDelegate.swift; sourceTree = "<group>"; };
-		294C1AC01B7545D0008BB6B4 /* RandomColorDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RandomColorDelegate.swift; sourceTree = "<group>"; };
+		2938CAAF1B7705BD002F20D4 /* BlendColorTextFieldDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BlendColorTextFieldDelegate.swift; sourceTree = "<group>"; };
+		294C1AC01B7545D0008BB6B4 /* RandomColorTextFieldDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RandomColorTextFieldDelegate.swift; sourceTree = "<group>"; };
 		294DA8EA1B73E28B00A9E2F9 /* TextFields.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TextFields.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		294DA8EE1B73E28B00A9E2F9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		294DA8EF1B73E28B00A9E2F9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -123,8 +123,8 @@
 			isa = PBXGroup;
 			children = (
 				294DA9101B73EB9700A9E2F9 /* EmojiTextFieldDelegate.swift */,
-				294C1AC01B7545D0008BB6B4 /* RandomColorDelegate.swift */,
-				2938CAAF1B7705BD002F20D4 /* BlendColorDelegate.swift */,
+				294C1AC01B7545D0008BB6B4 /* RandomColorTextFieldDelegate.swift */,
+				2938CAAF1B7705BD002F20D4 /* BlendColorTextFieldDelegate.swift */,
 			);
 			name = "Text Field Delegates";
 			sourceTree = "<group>";
@@ -229,11 +229,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2938CAB01B7705BD002F20D4 /* BlendColorDelegate.swift in Sources */,
+				2938CAB01B7705BD002F20D4 /* BlendColorTextFieldDelegate.swift in Sources */,
 				294DA8F21B73E28B00A9E2F9 /* ViewController.swift in Sources */,
 				294DA8F01B73E28B00A9E2F9 /* AppDelegate.swift in Sources */,
 				294DA9111B73EB9700A9E2F9 /* EmojiTextFieldDelegate.swift in Sources */,
-				294C1AC11B7545D0008BB6B4 /* RandomColorDelegate.swift in Sources */,
+				294C1AC11B7545D0008BB6B4 /* RandomColorTextFieldDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

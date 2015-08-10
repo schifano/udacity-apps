@@ -1,5 +1,5 @@
 //
-//  RandomColorDelegate.swift
+//  RandomColorTextFieldDelegate.swift
 //  TextFields
 //
 //  Created by Rachel Schifano on 8/7/15.
@@ -9,7 +9,7 @@
 import UIKit
 import Foundation
 
-class RandomColorDelegate: NSObject, UITextFieldDelegate {
+class RandomColorTextFieldDelegate: NSObject, UITextFieldDelegate {
     
     func textField(textField: UITextField, shouldChangeCharactersInRange range: NSRange, replacementString string: String) -> Bool {
         

@@ -18,8 +18,8 @@ class ViewController: UIViewController, UITextFieldDelegate {
     
     // Declare delegate objects
     let emojiDelegate = EmojiTextFieldDelegate()
-    let randomColorDelegate = RandomColorDelegate()
-    let blendColorDelegate = BlendColorDelegate()
+    let randomColorDelegate = RandomColorTextFieldDelegate()
+    let blendColorDelegate = BlendColorTextFieldDelegate()
     
     override func viewDidLoad() {
         super.viewDidLoad()
