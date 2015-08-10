@@ -34,15 +34,23 @@
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="FFL-3G-8tv" userLabel="Counter Text Field">
-                                <rect key="frame" x="16" y="140" width="382" height="30"/>
+                                <rect key="frame" x="16" y="190" width="382" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="JTy-NE-g96"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="qDN-m5-Qk4" userLabel="Blend Color Text Field">
+                                <rect key="frame" x="16" y="140" width="382" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="kfh-qw-838"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kdF-cf-IZX">
-                                <rect key="frame" x="177" y="220" width="60" height="60"/>
+                                <rect key="frame" x="177" y="270" width="60" height="60"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="60" id="Tfp-KE-dr2"/>
                                     <constraint firstAttribute="width" constant="60" id="cVR-V8-eS1"/>
@@ -55,24 +63,28 @@
                         <color key="backgroundColor" red="0.43005606375242417" green="0.55318003579189901" blue="0.65050219862084635" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="BKc-nI-ba8" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="20" id="59x-Fv-bQ2"/>
+                            <constraint firstItem="qDN-m5-Qk4" firstAttribute="top" secondItem="n82-cz-9Ib" secondAttribute="bottom" constant="20" id="Ez6-37-EAT"/>
                             <constraint firstItem="n82-cz-9Ib" firstAttribute="trailing" secondItem="kh9-bI-dsS" secondAttribute="trailingMargin" id="O2M-BU-dut"/>
                             <constraint firstItem="FFL-3G-8tv" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" id="OJ8-xW-yoE"/>
+                            <constraint firstItem="FFL-3G-8tv" firstAttribute="top" secondItem="qDN-m5-Qk4" secondAttribute="bottom" constant="20" id="Wjr-3h-D2b"/>
                             <constraint firstItem="BKc-nI-ba8" firstAttribute="trailing" secondItem="kh9-bI-dsS" secondAttribute="trailingMargin" id="Zqu-Yv-G8o"/>
                             <constraint firstAttribute="centerX" secondItem="kdF-cf-IZX" secondAttribute="centerX" id="aoX-1D-aU4"/>
                             <constraint firstItem="n82-cz-9Ib" firstAttribute="top" secondItem="BKc-nI-ba8" secondAttribute="bottom" constant="20" id="eLU-Xu-r5s"/>
                             <constraint firstItem="FFL-3G-8tv" firstAttribute="trailing" secondItem="kh9-bI-dsS" secondAttribute="trailingMargin" id="haZ-w9-HlT"/>
                             <constraint firstItem="n82-cz-9Ib" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" id="nkn-bK-Xw3"/>
+                            <constraint firstItem="qDN-m5-Qk4" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" id="seG-cX-KVB"/>
                             <constraint firstItem="BKc-nI-ba8" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" id="uHU-rh-8Bf"/>
-                            <constraint firstItem="FFL-3G-8tv" firstAttribute="top" secondItem="n82-cz-9Ib" secondAttribute="bottom" constant="20" id="wC2-OL-Gmj"/>
+                            <constraint firstItem="qDN-m5-Qk4" firstAttribute="trailing" secondItem="kh9-bI-dsS" secondAttribute="trailingMargin" id="wIP-YU-v6g"/>
                             <constraint firstItem="kdF-cf-IZX" firstAttribute="top" secondItem="FFL-3G-8tv" secondAttribute="bottom" constant="50" id="yEa-6G-Wsf"/>
                         </constraints>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
                     <connections>
+                        <outlet property="blendColorTextField" destination="qDN-m5-Qk4" id="dc8-Dd-gG8"/>
                         <outlet property="characterCountLabel" destination="kdF-cf-IZX" id="Sxa-3m-jNB"/>
-                        <outlet property="colorTextField" destination="n82-cz-9Ib" id="4V1-T4-kck"/>
                         <outlet property="counterTextField" destination="FFL-3G-8tv" id="ejd-qd-J5Z"/>
                         <outlet property="emojiTextField" destination="BKc-nI-ba8" id="Q3M-j5-TE6"/>
+                        <outlet property="randomColorTextField" destination="n82-cz-9Ib" id="H7k-Gm-BXy"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>

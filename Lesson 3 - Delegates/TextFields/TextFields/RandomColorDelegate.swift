@@ -46,4 +46,9 @@ class RandomColorDelegate: NSObject, UITextFieldDelegate {
         println(arc4random())
         return color
     }
+    
+    func textFieldShouldReturn(textField: UITextField) -> Bool {
+        textField.resignFirstResponder()
+        return true
+    }
 }

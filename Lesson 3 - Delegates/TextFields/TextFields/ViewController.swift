@@ -11,7 +11,8 @@ import UIKit
 class ViewController: UIViewController, UITextFieldDelegate {
 
     @IBOutlet weak var emojiTextField: UITextField!
-    @IBOutlet weak var colorTextField: UITextField!
+    @IBOutlet weak var randomColorTextField: UITextField!
+    @IBOutlet weak var blendColorTextField: UITextField!
     @IBOutlet weak var counterTextField: UITextField!
     @IBOutlet weak var characterCountLabel: UILabel!
     
@@ -25,8 +26,8 @@ class ViewController: UIViewController, UITextFieldDelegate {
 
         // Assign delegate objects to the text fields
         self.emojiTextField.delegate = emojiDelegate
-//        self.colorTextField.delegate = randomColorDelegate
-        self.colorTextField.delegate = blendColorDelegate
+        self.randomColorTextField.delegate = randomColorDelegate
+        self.blendColorTextField.delegate = blendColorDelegate
         self.counterTextField.delegate = self
     }
 
