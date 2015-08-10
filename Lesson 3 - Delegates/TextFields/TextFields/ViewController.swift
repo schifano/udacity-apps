@@ -10,6 +10,8 @@ import UIKit
 
 class ViewController: UIViewController, UITextFieldDelegate {
 
+    // FIXME: Hide label before typing
+    
     @IBOutlet weak var emojiTextField: UITextField!
     @IBOutlet weak var randomColorTextField: UITextField!
     @IBOutlet weak var blendColorTextField: UITextField!
