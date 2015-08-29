@@ -45,12 +45,18 @@
                                 <state key="normal" title="Search">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="searchPhotosByPhraseButtonTouchUp:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="6gX-Ck-f90"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Cea-Ch-OS7" userLabel="Buttom Search Button">
                                 <rect key="frame" x="306" y="504" width="48" height="30"/>
                                 <state key="normal" title="Search">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="searchPhotosByLatLonButtonTouchUp:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="gC7-3w-EPU"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Latitude" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6Rq-5d-juj" userLabel="Latitude Label">
                                 <rect key="frame" x="59" y="549" width="63" height="21"/>
