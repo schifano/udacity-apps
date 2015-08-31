@@ -8,6 +8,14 @@
 
 import UIKit
 
+// 1. Define constants
+let BASE_URL = "https://api.flickr.com/services/rest/"
+let METHOD_NAME = "flickr.galleries.getPhotos"
+let API_KEY = "9da6823efae700d900b5d6c1a6d7703c"
+let EXTRAS = "url_m"
+let DATA_FORMAT = "json"
+let NO_JSON_CALLBACK = "1"
+
 class ViewController: UIViewController {
 
     @IBOutlet weak var searchedImageView: UIImageView!
