@@ -54,11 +54,10 @@ class ViewController: UIViewController {
         // 6. Create NSURLSessionDataTask and completion handler
         let task = session.dataTaskWithRequest(request) { data, response, downloadError in
             if let error = downloadError {
-                println("Could not complete the request \(error)")
+                print("Could not complete the request \(error)")
             } else {
-                var parsingError: NSError? = nil
-                let parsedResult = NSJSONSerialization.JSONObjectWithData(data, options: NSJSONReadingOptions.AllowFragments, error: &parsingError) as! NSDictionary
-                println(parsedResult.valueForKey("photos")) // TEST
+                let parsedResult = (try! NSJSONSerialization.JSONObjectWithData(data!, options: NSJSONReadingOptions.AllowFragments)) as! NSDictionary
+                print(parsedResult.valueForKey("photos")) // TEST
             }
         }
         // 7. Resume (execute) the task
@@ -83,6 +82,6 @@ class ViewController: UIViewController {
             
         }
         
-        return (!urlVars.isEmpty ? "?" : "") + join("&", urlVars)
+        return (!urlVars.isEmpty ? "?" : "") + urlVars.joinWithSeparator("&")
     }
 }
