@@ -47,7 +47,7 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <action selector="searchPhotosByPhraseButtonTouchUp:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="6gX-Ck-f90"/>
+                                    <action selector="searchPhotosByPhraseButtonTouchUp:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="MJa-pa-Ki8"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Cea-Ch-OS7" userLabel="Buttom Search Button">
@@ -56,7 +56,7 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <action selector="searchPhotosByLatLonButtonTouchUp:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="zvV-S6-yZr"/>
+                                    <action selector="searchPhotosByLatLonButtonTouchUp:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="ztk-dz-tiU"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Latitude" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6Rq-5d-juj" userLabel="Latitude Label">
@@ -82,13 +82,11 @@
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
                     <connections>
-                        <outlet property="bottomSearchButton" destination="Cea-Ch-OS7" id="6PK-9X-iIE"/>
                         <outlet property="imageTitleLabel" destination="oWQ-gA-3qH" id="JID-zM-gqx"/>
                         <outlet property="latitudeTextField" destination="qRs-jM-F3Z" id="4RB-AY-TvJ"/>
                         <outlet property="longitudeTextField" destination="JVK-iJ-S6f" id="fv8-xw-07h"/>
                         <outlet property="phraseTextField" destination="yUZ-jX-Q1F" id="8Zv-Bx-h8C"/>
                         <outlet property="searchedImageView" destination="rE7-CF-YbB" id="gG8-eU-vvh"/>
-                        <outlet property="topSearchButton" destination="GTt-gZ-2Me" id="gFc-4y-S4K"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
